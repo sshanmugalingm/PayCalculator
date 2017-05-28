@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="au.com.payroll.service.PayrollCalculatorServiceImplSpec" tests="11" skipped="0" failures="0" errors="0" timestamp="2017-05-28T12:31:08" hostname="Senthurs-MacBook-Pro.local" time="0.363">
+  <properties/>
+  <testcase name="processPay, should throw Exception, when the EmployeePayDetail object is null" classname="au.com.payroll.service.PayrollCalculatorServiceImplSpec" time="0.246"/>
+  <testcase name="processPay, should throw Exception(Employee's First Name cannot be null or Empty), when First Name  is Null" classname="au.com.payroll.service.PayrollCalculatorServiceImplSpec" time="0.009"/>
+  <testcase name="processPay, should throw Exception(Employee's First Name cannot be null or Empty), when First Name  is Empty" classname="au.com.payroll.service.PayrollCalculatorServiceImplSpec" time="0.001"/>
+  <testcase name="processPay, should throw Exception(Employee's Last Name cannot be null or Empty), when Last Name is Null" classname="au.com.payroll.service.PayrollCalculatorServiceImplSpec" time="0.001"/>
+  <testcase name="processPay, should throw Exception(Employee's Last Name cannot be null or Empty), when Last Name is Empty" classname="au.com.payroll.service.PayrollCalculatorServiceImplSpec" time="0.001"/>
+  <testcase name="processPay, should throw Exception(Employee's Pay period cannot be null or Empty and should follow month/year format), when Pay Period is Null" classname="au.com.payroll.service.PayrollCalculatorServiceImplSpec" time="0.0"/>
+  <testcase name="processPay, should throw Exception(Employee's Pay period cannot be null or Empty and should follow month/year format), when Pay Period is Empty" classname="au.com.payroll.service.PayrollCalculatorServiceImplSpec" time="0.001"/>
+  <testcase name="processPay, should throw Exception(Employee's Pay Period should be in month/year format), when Pay Period is in Invalid Format" classname="au.com.payroll.service.PayrollCalculatorServiceImplSpec" time="0.001"/>
+  <testcase name="processPay, should throw Exception(Employee's Annual Salary should be a positive value), when Annual Salary is Not Positive Interger" classname="au.com.payroll.service.PayrollCalculatorServiceImplSpec" time="0.001"/>
+  <testcase name="processPay, should throw Exception(Employee's Super Rate should be a positive value), when Super % is Not Positive Interger" classname="au.com.payroll.service.PayrollCalculatorServiceImplSpec" time="0.001"/>
+  <testcase name="processPay, should return a valid Payslip, when valid Employee Details is passed" classname="au.com.payroll.service.PayrollCalculatorServiceImplSpec" time="0.081"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
