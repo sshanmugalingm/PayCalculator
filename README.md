@@ -1,10 +1,10 @@
-#Payroll Application
+# Payroll Application
 
 The Application uses Gradle 3.1 as the Build System.  However to run the application or to run any of the below commands we do not need to install Gradle.
 Java 8 is used as the main Development Language.
 All Unit and Integration Tests are written using Groovy and Spock Framework.
 
- ##Application Commands  
+## Application Commands  
                                                  
     1. Unit Tests: ./gradlew clean test                                      
     2. Integration Tests: ./gradlew clean integrationTest                    
@@ -42,7 +42,7 @@ The calculated Pay Details will be displayed as follows:
     Net Income : 4079
     Super Contribution : 450
 
-##A bit about the design
+## A bit about the design
 
 The main class is the PayrollBootStrap.  This will start up the the application.  Do necessary configurations (including adding seed data) and Call the PayrollConsole.
 The PayrollConsole (PayrollConsoleImpl implementation) class will listen for User Input.  Once the user inputs the Pay Details, the PayrollConsole will construct the EmployeePayDetail Object and
