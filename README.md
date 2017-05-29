@@ -5,17 +5,12 @@ The Application uses Gradle 3.1 as the Build System.  However to run the applica
 Java 8 is used as the main Development Language.
 All Unit and Integration Tests are written using Groovy and Spock Framework.
 
-========================================================================|
-| Application Commands                                                  |
-|=======================================================================|
-| Unit Tests: ./gradlew clean test                                      |
-|-----------------------------------------------------------------------|
-| Integration Tests: ./gradlew clean integrationTest                    |
-|-----------------------------------------------------------------------|
-| Code Coverage: ./gradlew clean test integrationTest jacocoTestReport  |
-|-----------------------------------------------------------------------|
-| Run Application: ./gradlew clean run                                  |
-|=======================================================================|
+ ##Application Commands  
+                                                 
+    1. Unit Tests: ./gradlew clean test                                      
+    2. Integration Tests: ./gradlew clean integrationTest                    
+    3. Code Coverage: ./gradlew clean test integrationTest jacocoTestReport  
+    4. Run Application: ./gradlew clean run                                  
 
 The './gradlew' command will only run in Unix Systems.  In order to user in Windows please replace the './gradlew' with 'gradlew'.
 However, please note that this application has not been tested on a Windows platform.
