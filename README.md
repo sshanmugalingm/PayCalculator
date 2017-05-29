@@ -11,7 +11,7 @@ All Unit and Integration Tests are written using Groovy and Spock Framework.
     3. Code Coverage: ./gradlew clean test integrationTest jacocoTestReport  
     4. Run Application: ./gradlew clean run                                  
 
-The './gradlew' command will only run in Unix Systems.  In order to user in Windows please replace the './gradlew' with 'gradlew'.
+The './gradlew' command will only run in Unix Systems.  In order to use in Windows please replace the './gradlew' with 'gradlew'.
 However, please note that this application has not been tested on a Windows platform.
 
 Assumption, when building this application I took is that, this will be a console based application, where user will input the Employee Annual Pay Details and the System will Calculate the PaySlip.
@@ -54,5 +54,3 @@ PayrollCalculationHandler is based on Chain of Responsibility Pattern.  This wil
 The output of this chain is a PaySlip object containing the calculated pay details.
 
 The PaySlip object is passed back to the PayrollConsole, which will transform the PaySlip Object to a String and display it to the User.
-
-Have a Nice Day!
