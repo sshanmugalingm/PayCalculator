@@ -9,7 +9,10 @@ import org.springframework.util.Assert;
 import java.util.regex.Pattern;
 
 /**
- * Created by senthurshanmugalingm on 27/05/2017.
+ * The Class responsible for kick starting the Payroll Calculation Process.
+ * This class will validate the Pay Details object to ensure the required parameters are set.
+ *
+ * @author Senthur Shanmugalingm
  */
 public class PayrollCalculatorServiceImpl implements PayrollCalculatorService {
 
@@ -25,6 +28,10 @@ public class PayrollCalculatorServiceImpl implements PayrollCalculatorService {
         return payCalculationHandler.calculate(payDetail, null);
     }
 
+    /**
+     * Validates the {@link EmployeePayDetail} payDetail object.
+     * @throws IllegalArgumentException when validation fails.
+     * */
     private void validate(EmployeePayDetail payDetail) {
         Assert.notNull(payDetail, "Employee Pay Details cannot be null");
 

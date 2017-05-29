@@ -14,7 +14,9 @@ import java.io.InputStreamReader;
 import java.util.regex.Pattern;
 
 /**
- * Created by senthurshanmugalingm on 28/05/2017.
+ * This Class is responsible for Starting the Console Application, listening to User Input and respond based on it.
+ *
+ * @author Senthur Shanmugalingm
  */
 public class PayrollConsoleImpl implements PayrollConsole {
 

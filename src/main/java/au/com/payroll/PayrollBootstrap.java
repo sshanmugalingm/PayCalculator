@@ -7,7 +7,9 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
 
 
 /**
- * Created by senthurshanmugalingm on 27/05/2017.
+ * Main Application Class.
+ *
+ * @author Senthur Shanmugalingm
  */
 public class PayrollBootstrap {
 

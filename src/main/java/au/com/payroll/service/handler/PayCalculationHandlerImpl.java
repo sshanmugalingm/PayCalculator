@@ -5,7 +5,10 @@ import au.com.payroll.dto.PaySlip;
 import org.springframework.beans.factory.annotation.Autowired;
 
 /**
- * Created by senthurshanmugalingm on 27/05/2017.
+ * This Class is responsible for initiating the Pay calculations.
+ * This class will create a pay slip object with initial details.
+ *
+ * @author Senthur Shanmugalingm
  */
 public class PayCalculationHandlerImpl implements PayCalculationHandler {
 

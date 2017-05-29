@@ -3,7 +3,9 @@ package au.com.payroll.dto;
 import java.math.BigDecimal;
 
 /**
- * Created by senthurshanmugalingm on 27/05/2017.
+ * Represents an Employee's Monthly Pay Details (Salary Slip Details)
+ *
+ * @author Senthur Shanmugalingm
  */
 public class PaySlip extends EmployeeDetail {
 

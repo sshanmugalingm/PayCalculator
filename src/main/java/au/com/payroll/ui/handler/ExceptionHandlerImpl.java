@@ -3,7 +3,8 @@ package au.com.payroll.ui.handler;
 import org.apache.log4j.Logger;
 
 /**
- * Created by senthurshanmugalingm on 28/05/2017.
+ * This class is responsible for Translating the Exception to User Readable format.
+ * @author Senthur Shanmugalingm
  */
 public class ExceptionHandlerImpl implements ExceptionHandler {
 

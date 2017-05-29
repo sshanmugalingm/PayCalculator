@@ -16,7 +16,7 @@ apply plugin: "jacoco"
 group 'au.com.senthur'
 version '1.0-SNAPSHOT'
 
-mainClassName = 'T'
+mainClassName = 'au.com.payroll.PayrollBootstrap'
 
 sourceCompatibility = 1.8
 
@@ -78,12 +78,12 @@ run{
     standardInput = System.in
 }
 
-/*task runJar(type: JavaExec) {
-    //classpath = files("build/libs/${jar.baseName}-${jar.version}.jar")
-    //classpath += sourceSets.main.runtimeClasspath
-    //main = mainClassName
-   //standardInput = System.in
-}*/
+task runJar(type: JavaExec) {
+    classpath = files("build/libs/${jar.baseName}-${jar.version}.jar")
+    classpath += sourceSets.main.runtimeClasspath
+    main = mainClassName
+    standardInput = System.in
+}
 
 jacocoTestReport {
     group = "Reporting"

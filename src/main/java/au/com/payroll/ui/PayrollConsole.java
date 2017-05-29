@@ -1,9 +1,14 @@
 package au.com.payroll.ui;
 
 /**
- * Created by senthurshanmugalingm on 28/05/2017.
+ * Implement this Interface to Support Console Functionality
+ *
+ * @author Senthur Shanmugalingm
  */
 public interface PayrollConsole {
 
+    /**
+     * Kick Start's the Console.
+     * */
     void startConsole();
 }

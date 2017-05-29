@@ -4,10 +4,20 @@ import au.com.payroll.dto.EmployeePayDetail;
 import au.com.payroll.dto.PaySlip;
 
 /**
- * Created by senthurshanmugalingm on 27/05/2017.
+ * Implement this Interface to Process the Payroll.
+ * The Payroll Processing should kick start from this Interface's Implementation.
+ *
+ * @author Senthur Shanmugalingm
  */
 public interface PayrollCalculatorService {
 
+    /**
+     * This method will process the Pay and return a Valid Pay Slip Object
+     *
+     * @param payDetail {@link EmployeePayDetail}
+     * @return {@link PaySlip}
+     *
+     * */
     PaySlip processPay(EmployeePayDetail payDetail);
 
 }

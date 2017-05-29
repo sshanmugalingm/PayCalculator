@@ -1,9 +1,11 @@
 package au.com.payroll.dto;
 
 /**
- * Created by senthurshanmugalingm on 27/05/2017.
+ * Represents an Employees basic details
+ *
+ * @author Senthur Shanmugalingm
  */
-public class EmployeeDetail {
+public abstract class EmployeeDetail {
 
     private String firstName;
     private String lastName;

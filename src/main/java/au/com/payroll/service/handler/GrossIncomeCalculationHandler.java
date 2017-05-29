@@ -6,6 +6,7 @@ import au.com.payroll.dto.PaySlip;
 import org.springframework.beans.factory.annotation.Autowired;
 
 /**
+ * A Class that is responsible for performing Gross Income Calculation
  * Created by senthurshanmugalingm on 27/05/2017.
  */
 public class GrossIncomeCalculationHandler implements PayCalculationHandler {

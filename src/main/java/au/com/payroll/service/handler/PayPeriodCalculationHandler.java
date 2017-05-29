@@ -7,7 +7,9 @@ import org.joda.time.LocalDate;
 import org.springframework.beans.factory.annotation.Autowired;
 
 /**
- * Created by senthurshanmugalingm on 27/05/2017.
+ * This Class is responsible for calculating the Payment Period.
+ *
+ * @author Senthur Shanmugalingm
  */
 public class PayPeriodCalculationHandler implements PayCalculationHandler {
 

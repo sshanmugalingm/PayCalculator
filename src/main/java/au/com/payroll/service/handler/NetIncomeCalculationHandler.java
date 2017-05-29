@@ -5,7 +5,9 @@ import au.com.payroll.dto.PaySlip;
 import org.springframework.beans.factory.annotation.Autowired;
 
 /**
- * Created by senthurshanmugalingm on 27/05/2017.
+ * A Class that is responsible for Calculating Net Income
+ *
+ * @author Senthur Shanmugalingm
  */
 public class NetIncomeCalculationHandler implements PayCalculationHandler {
 
@@ -15,8 +17,7 @@ public class NetIncomeCalculationHandler implements PayCalculationHandler {
     @Override
     public PaySlip calculate(EmployeePayDetail payDetail, PaySlip paySlip) {
 
-        long monthlyNetIncome = paySlip.getGrossIncome() - paySlip.getIncomeTax();
-        paySlip.setNetIncome(monthlyNetIncome);
+        paySlip.setNetIncome(paySlip.getGrossIncome() - paySlip.getIncomeTax());
         return superCalculationHandler.calculate(payDetail, paySlip);
     }
 }

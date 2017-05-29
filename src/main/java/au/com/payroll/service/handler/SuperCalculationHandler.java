@@ -4,13 +4,15 @@ import au.com.payroll.dto.EmployeePayDetail;
 import au.com.payroll.dto.PaySlip;
 
 /**
- * Created by senthurshanmugalingm on 27/05/2017.
+ * This Class is responsible for Calculating the Super Annuation
+ *
+ * @author Senthur Shanmugalingm
  */
 public class SuperCalculationHandler implements PayCalculationHandler {
 
     @Override
     public PaySlip calculate(EmployeePayDetail payDetail, PaySlip paySlip) {
-        paySlip.setSuperAnnuation(Math.round(new Double((paySlip.getGrossIncome() * payDetail.getSuperRate()) / 100)));
+        paySlip.setSuperAnnuation(Math.round((paySlip.getGrossIncome() * payDetail.getSuperRate()) / 100));
         return paySlip;
     }
 }

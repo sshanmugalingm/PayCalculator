@@ -13,19 +13,30 @@ class PayPeriodCalculationHandlerSpec extends Specification {
 
     def setup() {
         payPeriodCalculationHandler = new PayPeriodCalculationHandler()
+
+        payPeriodCalculationHandler.grossIncomeCalculationHandler = Stub(PayCalculationHandler) {
+            calculate(*_) >> { EmployeePayDetail payDetail, PaySlip paySlip ->
+                return paySlip
+            }
+        }
     }
 
-    def "calculate, should calculate the pay period and call Gross Income Calculator and return a valid Pay Slip, when valid Employee Details are passed"() {
-        given :
-        given :
+    def "calculate, should call Gross Income Calculator to calculate Gross Income, when Valid Employee Details are passed"() {
+        when :
         String[] employeeParams = ['FirstName', 'LastName', '8000', '9.0', '12/2015']
+        payPeriodCalculationHandler.calculate(new EmployeePayDetail(employeeParams), new PaySlip())
 
-        and :
+        then :
         payPeriodCalculationHandler.grossIncomeCalculationHandler = Mock(PayCalculationHandler) {
             1 * calculate(*_) >> { EmployeePayDetail payDetail, PaySlip paySlip ->
                 return paySlip
             }
         }
+    }
+
+    def "calculate, should calculate the pay period and return a valid Pay Slip, when valid Employee Details are passed"() {
+        given :
+        String[] employeeParams = ['FirstName', 'LastName', '8000', '9.0', '12/2015']
 
         when :
         EmployeePayDetail payDetail = new EmployeePayDetail(employeeParams)

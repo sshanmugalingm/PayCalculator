@@ -9,7 +9,8 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
 /**
- * Created by senthurshanmugalingm on 27/05/2017.
+ * Represents the Tax Table
+ * @author Senthur Shanmugalingm
  */
 @Entity
 public class IncomeTaxChart {

@@ -1,7 +1,9 @@
 package au.com.payroll.dto;
 
 /**
- * Created by senthurshanmugalingm on 27/05/2017.
+ * Represents an Employee's Annual Salary (package) Details
+ *
+ * @author Senthur Shanmugalingm.
  */
 public class EmployeePayDetail extends EmployeeDetail {
 
