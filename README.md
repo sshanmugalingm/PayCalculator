@@ -1,5 +1,5 @@
-#Payroll Application
-######Created By Senthur Shanmugalingm
+##Payroll Application
+Created By Senthur Shanmugalingm
 
 The Application uses Gradle 3.1 as the Build System.  However to run the application or to run any of the below commands we do not need to install Gradle.
 Java 8 is used as the main Development Language.
